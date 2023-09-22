@@ -1,24 +1,16 @@
-class Bank_Account:
-    def __init__(self):
-        self.balance=0
-        print("Hello!!! Welcome to the Deposit & Withdrawal Machine")
- 
-    def deposit(self):
-        amount=float(input("Enter amount to be Deposited: "))
-        self.balance += amount
-        print("\n Amount Deposited:",amount)
- 
-    def withdraw(self):
-        amount = float(input("Enter amount to be Withdrawn: "))
-        if self.balance>=amount:
-            self.balance-=amount
-            print("\n You Withdrew:", amount)
-        else:
-            print("\n Insufficient balance  ")
- 
-    def display(self):
-        print("\n Net Available Balance=",self.balance)
-s = Bank_Account()
-s.deposit()
-s.withdraw()
-s.display()
+def checkYear(year):
+    
+    # Return true if year is a multiple
+    # of 4 and not multiple of 100.
+    # OR year is multiple of 400.
+    import calendar
+    return(calendar.isleap(year))
+    
+# Driver Code 
+year = 2000
+if (checkYear(year)):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+        
+# This code is contributed by Chin

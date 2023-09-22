@@ -1,26 +1,17 @@
-class Player:
-
-    def play(self):
-
-        print("The player is playing cricket.")
-
-
-class Batsman(Player):
-
-    def play(self):
-
-        print("The batsman is batting.")
-
-class Bowler(Player):
-
-    def play(self):
-
-        print("The bowler is bowling.")
-
-batsman = Batsman()
-
-bowler = Bowler()
-
-batsman.play()
-
-bowler.play()
+# Python 3 program to find 
+# factorial of given number
+  
+# Function to find factorial of given number
+def factorial(n):
+       
+    if n == 0:
+        return 1
+      
+    return n * factorial(n-1)
+   
+# Driver Code
+num = 5;
+print("Factorial of", num, "is",
+factorial(num))
+   
+# This code is contributed by Smitha Dinesh Semwal
